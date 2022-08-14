@@ -20,7 +20,7 @@ function nextQuestion() {
     answersEl.textContent = ''
     getQuestion++
     console.log(getQuestion)
-    if(getQuestion >= questions.length){
+    if (getQuestion >= questions.length) {
         alert("No More Questions Please Refresh to Start Again")
     }
     displayQuestion()
@@ -31,8 +31,17 @@ function previousQuestion() {
     answersEl.textContent = ''
     getQuestion--
     console.log(getQuestion)
-    if(getQuestion >= questions.length){
+    if (getQuestion >= questions.length) {
         alert("No More Questions Please Refresh to Start Again")
     }
     displayQuestion()
+}
+
+function revealAnswer() {
+    var x = document.getElementById("answers");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
 }
