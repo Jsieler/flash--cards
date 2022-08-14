@@ -10,18 +10,23 @@
 </head>
 
 <body>
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front" id="questions">
+    <div class="question-card">
+        <div class="card-container">
+            <div id="questions">
             </div>
-            <div class="flip-card-back" id="answers">
+            <div id="answers">
             </div>
         </div>
     </div>
+
+
     <div class="button-container">
-        <button class="button" onclick="nextQuestion()">Next</button>
-        <button class="button" onclick="previousQuestion()">Previous</button>
+        <button id="button-reveal" onclick="revealAnswer()">Show/Hide Answer</button>
+        <button id="button-next" onclick="nextQuestion()">Next</button>
+        <button id="button-previous" onclick="previousQuestion()">Previous</button>
     </div>
+
+
 
 
     <script src="./index.js"></script>
