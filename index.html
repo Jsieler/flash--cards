@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash-Cards</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front" id="questions">
+            </div>
+            <div class="flip-card-back" id="answers">
+            </div>
+        </div>
+    </div>
+    <div class="button-container">
+        <button class="button" onclick="nextQuestion()">Next</button>
+        <button class="button" onclick="previousQuestion()">Previous</button>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
