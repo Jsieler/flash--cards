@@ -20,6 +20,7 @@ function nextQuestion() {
     answersEl.textContent = ''
     getQuestion++
     console.log(getQuestion)
+    revealAnswer()
     if (getQuestion >= questions.length) {
         alert("No More Questions Please Refresh to Start Again")
     }
